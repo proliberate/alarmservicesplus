@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'slim-rails'
-gem 'bootstrap-sass'
+gem 'foundation-rails'
 
 # DEFAULTS
 gem 'rails', '4.0.3'

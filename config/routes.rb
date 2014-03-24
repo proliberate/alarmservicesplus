@@ -1,4 +1,9 @@
 Alarmservicesplus::Application.routes.draw do
+  root "pages#index"
+  get "about",        controller: "pages"
+  get "residential",  controller: "pages"
+  get "commercial",   controller: "pages"
+  get "contact",      controller: "pages"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
