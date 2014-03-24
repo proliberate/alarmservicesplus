@@ -1,3 +1,32 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  @extend .row;
+  // @extend .corporate;
+  @extend .citytown;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+.citytown {
+  padding: 100px 0 20px;
+  background-size: 1780px;
+  background-position: 0 -650px;
+  background-image: url(blur/getrefe_citytownk.jpg);
+}
+
+.corporate {
+  padding: 100px 0 20px;
+  // background-image: url(blur/gratisography.com_pictures_73H.jpg);
+  background-size: 2100px;
+  background-position: -140px -190px;
+}
+
+h1 {
+  color: white;
+  text-shadow: -2px 2px #333;
+  font-size: 4em;
+  line-height: 100%;
+}
