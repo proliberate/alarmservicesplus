@@ -1,0 +1,13 @@
+div.fixed
+  nav.top-bar
+    ul.title-area
+      li.name
+        h1
+          a href="#" Alarm Services Plus
+      li.toggle-topbar.menu-icon
+        a Menu
+    section.top-bar-section
+      ul.right
+        - for menuitem in [:Home,:About,:Commercial,:Residential,:Contact]
+          li
+            a href="#" = menuitem

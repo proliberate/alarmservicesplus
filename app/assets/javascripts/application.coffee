@@ -10,11 +10,12 @@
 # Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 # about supported directives.
 #
+#= require vendor/modernizr
 #= require jquery
+#= require jquery.turbolinks
 #= require jquery_ujs
-#= require foundation
-#= require_tree .
-
-$ -> $(document).foundation()
-
 #= require turbolinks
+#= require foundation/foundation
+#= require foundation/foundation.topbar
+#= require_self
+#= require_tree .

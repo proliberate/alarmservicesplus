@@ -2,11 +2,13 @@ doctype html
 html
   head
     title Alarmservicesplus
-    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
-    = javascript_include_tag "vendor/modernizr"
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    = csrf_meta_tags
+    link rel="stylesheet" href="//foundationcdn.com/foundation/5.2.0/css/foundation.min.css"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-  body
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  body data-no-turbolink="true"
     = yield
     = render 'layouts/footer'
+    coffee:
+      #$ -> $(document).foundation()

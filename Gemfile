@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'jquery-turbolinks'
 gem 'slim-rails'
-gem 'foundation-rails'
 
 # DEFAULTS
 gem 'rails', '4.0.3'
